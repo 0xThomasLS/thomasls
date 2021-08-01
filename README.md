@@ -1,4 +1,5 @@
 # marie-pepin
+Single Page Application to list all social media links
 
 ## Project setup
 ```
@@ -20,5 +21,7 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Deploy application
+```
+firebase deploy
+```
