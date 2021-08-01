@@ -2,7 +2,7 @@
   <div class="social-links">
     <ul>
       <li v-for="social in links" :key="JSON.stringify(social)">
-        <a class="btn f-w" :href="social.link">
+        <a class="btn f-w" :href="social.link" target="_blank">
           <img
             v-if="social.icon"
             :src="require(`@/assets/icons/${social.icon}.png`)"
