@@ -10,12 +10,17 @@ export default {
       icon: "instagram",
     },
     {
+      link: "https://twitter.com/_MariePepin",
+      name: "@_MariePepin",
+      icon: "twitter",
+    },
+    {
       link: "https://opensea.io/MariePepin",
       name: "mariepepin.eth",
       icon: "opensea",
     },
     {
-      link: "#",
+      link: "https://www.paypal.com/paypalme/MTPepin",
       name: "Donation",
     },
   ],

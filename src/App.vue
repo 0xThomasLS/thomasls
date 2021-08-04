@@ -69,10 +69,18 @@ body {
   justify-content: center;
   align-items: center;
   color: darken($accent-color, 50%);
+  position: relative;
+  margin-top: 3px;
+  margin-left: 3px;
 
   &:hover {
-    background: transparent;
-    color: $accent-color;
+    margin-top: 0;
+    margin-left: 0;
+
+    &::before {
+      top: -3px;
+      left: -3px;
+    }
   }
 
   & > img {
@@ -80,6 +88,20 @@ body {
     width: $icon-size;
     margin-right: 1em;
     margin-left: -0.7em;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -6px;
+    left: -6px;
+    background: darken($accent-color, 30%);
+    border: 3px solid darken($accent-color, 30%);
+    border-radius: 1.5em;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
   }
 }
 
@@ -111,7 +133,8 @@ body {
 .persona {
   position: absolute;
   z-index: 1;
-  width: $persona-width;
+  max-width: $persona-width;
+  width: 100%;
   top: 8px;
   left: 50%;
   margin-left: -1 * $persona-width * 0.5;
@@ -127,7 +150,7 @@ body {
     flex-direction: column;
     justify-content: center;
     top: 0;
-    left: $persona-width / 1.6;
+    left: $persona-width * 0.625;
   }
 
   .persona {
