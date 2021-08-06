@@ -1,5 +1,5 @@
-# marie-pepin
-Single Page Application to list all social media links
+# thomasls
+Single Page Application to list all social media links based on marie-pepin, view it on [https://thomasls.eth.link/](https://thomasls.eth.link/)
 
 ## Project setup
 ```
@@ -19,9 +19,4 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
-```
-
-### Deploy application
-```
-firebase deploy
 ```
