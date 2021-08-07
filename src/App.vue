@@ -1,6 +1,6 @@
 <template>
   <h1>{{ name }}</h1>
-  <img class="persona" alt="MariePepin" src="./assets/persona.svg" />
+  <img class="persona" :alt="name + ' icon'" src="./assets/persona.svg" />
   <SocialLinks :title="name" :links="links" />
 </template>
 
